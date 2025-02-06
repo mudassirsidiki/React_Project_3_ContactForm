@@ -1,0 +1,219 @@
+body{
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #008cff, #1a9fb0, #36353f, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  overflow-x: hidden; 
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Navbar{
+  display: flex;
+  width: 95vw;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+  color: white  ;
+}
+
+.navlist ul{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  justify-content: center;
+ /* Adjust spacing as needed */
+}
+
+.buttons button {
+  background-color: #007bff; /* Primary blue */
+  color: white; /* White text */
+  border: none; /* Remove default borders */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0.75rem 1.5rem; /* Button padding */
+  font-size: 15px; /* Font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.buttons button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+}
+
+.head{
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14%;
+  margin-top: 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+.head h1{
+  font-weight: 900;
+  font-size: 45px;
+}
+
+
+.head p{
+  color: rgb(255, 255, 255);
+  margin-top: -15px;
+  font-size: 18px;
+  width: 1100px;
+  height: 72px;
+}
+
+
+
+
+
+
+.contact-form-container {
+  margin-top: -25px;
+  margin-left: 12%;
+  width: 480px; /* Reduced width */
+  height: 310px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  padding: 22px; /* Reduced padding */
+  /* border: 1px solid #000000; 
+  border-radius: 8px;
+  background-color: #0f1944; */
+  /* box-shadow: 0 4px 8px rgba(19, 103, 187, 0.3) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-container:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
+  /* box-shadow: 0 6px 12px rgba(30, 144, 255, 0.5); Enhanced glow on hover */
+}
+
+.button-group {
+  display: flex;
+  gap: 1px; /* Reduced gap */
+}
+
+.contact-button,
+.email-button {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  border-radius: 4px;
+  border: 1px solid #000000; /* Blue border */
+  background-color: #000000; /* Darker blue on hover */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover,
+.email-button:hover {
+  background-color: #1e90ff; /* Blue hover background */
+  box-shadow: 0 4px 6px rgba(30, 144, 255, 0.5); /* Blue glow */
+}
+
+.input-group {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap */
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #000000; /* Blue border */
+  border-radius: 4px;
+  background-color: #ffffff; /* Dark input background */
+  color: #000000; /* White text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #1e90ff; /* Blue focus border */
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.7); /* Blue glow on focus */
+  outline: none;
+}
+
+.textarea-field {
+  resize: none;
+  height: 90px; /* Adjusted height */
+}
+
+.flex{
+  display: flex;
+}
+
+.hero{
+  margin-left: 40px;
+  margin-top: -50px;
+}
+
+
+
+.submit-button{
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  border-radius: 4px;
+  border: 1px solid #000000; /* Blue border */
+  background-color: #000000; /* Darker blue on hover */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover{
+  background-color: #1e90ff; /* Blue hover background */
+  box-shadow: 0 4px 6px rgba(30, 144, 255, 0.5); /* Blue glow */
+}
+
